@@ -1,0 +1,6 @@
+framework module Pods_iosSwiftProjectTemplate {
+  umbrella header "Pods-iosSwiftProjectTemplate-umbrella.h"
+
+  export *
+  module * { export * }
+}

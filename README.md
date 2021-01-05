@@ -21,7 +21,15 @@ Run `bin/setup`
 This will:
 
  - Install the gem dependencies
- - Install the pod dependencies
+
+Then you need to rename this Xcode. Follow this [link](https://programmingwithswift.com/how-to-rename-an-xcode-project/)
+
+After you renamed this Xcode project, you still need to rename R.swift paths:
+1. Go to .xcodeproj -> Build Phases -> R.swift run section. Change iosSwiftProjectTemplate to your new project name.
+2. Change .swiftlint file to exclude R.generated.swift file correctly under your new project name.
+3. Build your project to generate R.swift artifact file
+
+Now your Xcode project is now ready to be developed!
 
 ## Testing ##
 

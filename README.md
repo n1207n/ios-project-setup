@@ -12,6 +12,7 @@ You'll need to copy this repo and rename this xcode project with new name. After
 - Ackack and its Build phase script
 - R.swift and its Build phase script
 - Target schemas setup from local dev to production
+- No Main Storyboard and Launcherscreen XIB to prefer programmatical UI
 
 ## Setup ##
 

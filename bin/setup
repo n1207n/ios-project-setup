@@ -2,5 +2,6 @@
 
 
 brew bundle
+pod install
 
 

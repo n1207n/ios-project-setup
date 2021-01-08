@@ -1,35 +1,42 @@
 # iosSwiftProjectTemplate #
 
-My personal iOS bootstrapped project template.
-
-You'll need to copy this repo and rename this xcode project with new name. Afterwards, you can follow below setup.
+My personal iOS bootstrapped project template. Lots of time/efforts invested to create a truly get-go iOS app project template.
 
 ## Battery-included
+- Targeting Swift 5 and iOS 12
 - Scaffolded by liftoff
+- Brewfile to install toolings
 - Opinionated Podfile
-- Brewfile
 - Swiftlint and its Build phase script
 - Ackack and its Build phase script
 - R.swift and its Build phase script
 - Target schemas setup from local dev to production
+- Environment read from xcconfig file
+- Few base classes
 - No Main Storyboard and Launcherscreen XIB to prefer programmatical UI
 
 ## Setup ##
 
-Run `bin/setup`
+First, run `bin/setup`
 
 This will:
 
- - Install the gem dependencies
+ - Install the brew dependencies
+ - Initiate `pod install`
 
-Then you need to rename this Xcode. Follow this [link](https://programmingwithswift.com/how-to-rename-an-xcode-project/)
+Second, you need to rename this Xcode. Follow this [link](https://programmingwithswift.com/how-to-rename-an-xcode-project/)
 
-After you renamed this Xcode project, you still need to rename R.swift paths:
-1. Go to .xcodeproj -> Build Phases -> R.swift run section. Change iosSwiftProjectTemplate to your new project name.
+Third, you need to rename R.swift paths after you renamed this Xcode project:
+
+1. Go to .xcodeproj -> Build Phases -> R.swift run section. Change `iosSwiftProjectTemplate` to your new project name.
 2. Change .swiftlint file to exclude R.generated.swift file correctly under your new project name.
 3. Build your project to generate R.swift artifact file
 
-Now your Xcode project is now ready to be developed!
+Fourth, Rename build schemes to replace `iosSwiftProjectTemplate`
+
+Fifth, Replace `iosSwiftProjectTemplate` in `bin/test`
+
+Run build and now your Xcode project is now ready to be developed!
 
 ## Testing ##
 

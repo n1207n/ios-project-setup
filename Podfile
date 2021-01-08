@@ -30,6 +30,7 @@ target 'iosSwiftProjectTemplate' do
   pod 'SkeletonView', '~> 1.11.0'
   pod 'SnapKit', '~> 5.0.1'
   pod 'SwiftMessages', '~> 8.0.5'
+  pod 'TransitionButton', '~> 0.5.3'
 
   # Utilities
   pod 'R.swift', '~> 5.3.1'
@@ -37,6 +38,11 @@ target 'iosSwiftProjectTemplate' do
   pod 'SwiftyJSON', '~> 5.0.0'
   pod 'SwiftValidator', :git => 'https://github.com/jpotts18/SwiftValidator.git', :tag => '5.0.0'
   pod 'SwiftKeychainWrapper', '~> 4.0.1'
+  pod 'Then', '~> 2.7.0'
+  pod 'CryptoSwift', '~> 1.3.8'
+  pod 'GRDB.swift/SQLCipher', '~> 5.2.0'
+  pod 'SQLCipher', '~> 4.4.2'
+  pod 'RxGRDB/SQLCipher', '~> 1.0.0'
 
   # DI
   pod 'Swinject', '~> 2.7.1'

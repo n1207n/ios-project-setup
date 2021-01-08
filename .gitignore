@@ -61,6 +61,8 @@ fastlane/screenshots
 *.orig
 .idea/
 
-
 # R.swift
 *.generated.swift
+
+# Env files
+*.xcconfig

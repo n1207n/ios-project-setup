@@ -2,7 +2,7 @@ language: objective-c
 
 branches:
   only:
-    master
+    main
 
 env: export LANG=en_US.UTF-8
 

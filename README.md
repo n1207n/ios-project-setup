@@ -31,7 +31,7 @@ Third, you need to rename R.swift paths after you renamed this Xcode project:
 1. Go to .xcodeproj -> Build Phases -> R.swift run section. Change `iosSwiftProjectTemplate` to your new project name.
 2. Change .swiftlint file to exclude R.generated.swift file correctly under your new project name.
 3. Build your project to generate R.swift artifact file
-4. Add `R.generated.swift` reference to Resources/Other-Sources inside your project
+4. Delete missing `R.generated.swift` and add the reference back to Resources/Other-Sources inside your project
 
 Fourth, replace iosSwiftProjectTemplate (and COMPANY_NAME) in the followings:
 - Organization name in project target
@@ -47,6 +47,8 @@ Fifth, add the followings to `Configs` in your project folder based on `.xcconfi
 - QA.xcconfig
 - Production.xcconfig
 - Change .xcconfig_example to replace iosSwiftProjectTemplate
+
+Sixth, you need to re-configure project configurations with your above xcconfig files.
 
 As a last sweep, search any `iosSwiftProjectTemplate` or `COMPANY_NAME` string in the project and replace them properly.
 

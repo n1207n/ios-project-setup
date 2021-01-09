@@ -36,18 +36,24 @@ Third, you need to rename R.swift paths after you renamed this Xcode project:
 Fourth, replace iosSwiftProjectTemplate (and COMPANY_NAME) in the followings:
 - Organization name in project target
 - Launch screen storyboard
-- Build schemes
 - bin/test script
-- R.swift build phase path and .swiftlint file
+- AppDelegate.swift
+- BaseViewController.swift
+- Environment.swift
 
-Run build and now your Xcode project is now ready to be developed!
-
-## Xcconfig file ##
-This project is already configured to use inherited xcconfigs from this project configuration Pods. Simply, add the followings to `Configs` in your project folder:
+Fifth, add the followings to `Configs` in your project folder based on `.xcconfig_example`:
 - Development.xcconfig
 - Staging.xcconfig
 - QA.xcconfig
 - Production.xcconfig
+- Change .xcconfig_example to replace iosSwiftProjectTemplate
+
+As a last sweep, search any `iosSwiftProjectTemplate` or `COMPANY_NAME` string in the project and replace them properly.
+
+Now, run build and now your Xcode project is now ready to be developed!
+
+## Xcconfig file ##
+This project is already configured to use inherited xcconfigs from this project configuration Pods.
 
 There is a sample xcconfig file inside `Configs` folder.
 

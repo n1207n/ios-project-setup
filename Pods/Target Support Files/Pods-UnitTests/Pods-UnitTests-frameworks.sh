@@ -174,7 +174,7 @@ code_sign_if_enabled() {
   fi
 }
 
-if [[ "$CONFIGURATION" == "Debug Dev" ]]; then
+if [[ "$CONFIGURATION" == "Dev" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework"
@@ -185,7 +185,7 @@ if [[ "$CONFIGURATION" == "Debug Dev" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework"
 fi
-if [[ "$CONFIGURATION" == "Debug Prod" ]]; then
+if [[ "$CONFIGURATION" == "Prod" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework"
@@ -196,7 +196,7 @@ if [[ "$CONFIGURATION" == "Debug Prod" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework"
 fi
-if [[ "$CONFIGURATION" == "Debug QA" ]]; then
+if [[ "$CONFIGURATION" == "QA" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework"
@@ -207,51 +207,7 @@ if [[ "$CONFIGURATION" == "Debug QA" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework"
 fi
-if [[ "$CONFIGURATION" == "Debug Staging" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Quick/Quick.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RxNimble/RxNimble.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework"
-fi
-if [[ "$CONFIGURATION" == "Release Dev" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Quick/Quick.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RxNimble/RxNimble.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework"
-fi
-if [[ "$CONFIGURATION" == "Release Prod" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Quick/Quick.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RxNimble/RxNimble.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework"
-fi
-if [[ "$CONFIGURATION" == "Release QA" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Quick/Quick.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RxNimble/RxNimble.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework"
-fi
-if [[ "$CONFIGURATION" == "Release Staging" ]]; then
+if [[ "$CONFIGURATION" == "Staging" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework"

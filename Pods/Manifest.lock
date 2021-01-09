@@ -101,7 +101,7 @@ DEPENDENCIES:
   - RxTest (~> 5)
   - SkeletonView (~> 1.11.0)
   - SnapKit (~> 5.0.1)
-  - SQLCipher (~> 4.4.2)
+  - SQLCipher (~> 4.0)
   - SwiftKeychainWrapper (~> 4.0.1)
   - SwiftMessages (~> 8.0.5)
   - SwiftValidator (from `https://github.com/jpotts18/SwiftValidator.git`, tag `5.0.0`)
@@ -198,6 +198,6 @@ SPEC CHECKSUMS:
   TransitionButton: 36283346e17c64775a1b3bc3a7a72940a367de1f
   WeakMapTable: 05c694ce8439a7a9ebabb56187287a63c57673d6
 
-PODFILE CHECKSUM: c8ce3663639c371976d28c357b3af6d1ab2ec9af
+PODFILE CHECKSUM: f5688e1344805c8765ba217b68b9c4b091280518
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.10.1

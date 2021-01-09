@@ -1,3 +1,5 @@
+#include "Pods/Target Support Files/Pods-iosSwiftProjectTemplate/Pods-iosSwiftProjectTemplate.dev.xcconfig"
+
 // App Settings
 APP_NAME = iosSwiftProjectTemplate (dev)
 APP_BUNDLE_ID = com.sleepyseal.iosSwiftProjectTemplate.dev

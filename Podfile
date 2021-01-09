@@ -41,7 +41,7 @@ target 'iosSwiftProjectTemplate' do
   pod 'Then', '~> 2.7.0'
   pod 'CryptoSwift', '~> 1.3.8'
   pod 'GRDB.swift/SQLCipher', '~> 5.2.0'
-  pod 'SQLCipher', '~> 4.4.2'
+  pod 'SQLCipher', '~> 4.0'
   pod 'RxGRDB/SQLCipher', '~> 1.0.0'
 
   # DI

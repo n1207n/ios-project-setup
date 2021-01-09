@@ -23,7 +23,7 @@
       </BuildActionEntries>
    </BuildAction>
    <TestAction
-      buildConfiguration = "Release QA"
+      buildConfiguration = "QA"
       selectedDebuggerIdentifier = ""
       selectedLauncherIdentifier = "Xcode.IDEFoundation.Launcher.PosixSpawn"
       shouldUseLaunchSchemeArgsEnv = "YES">
@@ -50,7 +50,7 @@
       </Testables>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Release QA"
+      buildConfiguration = "QA"
       selectedDebuggerIdentifier = ""
       selectedLauncherIdentifier = "Xcode.IDEFoundation.Launcher.PosixSpawn"
       launchStyle = "0"
@@ -71,7 +71,7 @@
       </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Release QA"
+      buildConfiguration = "QA"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
@@ -88,10 +88,10 @@
       </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
-      buildConfiguration = "Release QA">
+      buildConfiguration = "QA">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Release QA"
+      buildConfiguration = "QA"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
